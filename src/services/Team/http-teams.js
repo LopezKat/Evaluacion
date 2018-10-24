@@ -23,6 +23,17 @@ class HttpTeam {
             console.log(error);
         }
     }
+
+    async getPlayerById(strPlayer){
+        try {
+            const url  = `${ BASE_API }${ HTTP_TEAM.getPlayer }${strPlayer}`;
+            console.log(url);
+            const data = await httpBase.baseGet(url, {});
+            return data;
+        } catch (error) {
+            console.log(error);
+        }
+    }
 }
 
 export default new HttpTeam;

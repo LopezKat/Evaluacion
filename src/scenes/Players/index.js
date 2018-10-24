@@ -3,7 +3,7 @@ import {
     View,FlatList
   } from 'react-native';
 
-import ItemPlayer from "./components/player-detail";
+import ItemPlayer from "./components/item-player";
 import ItemSeparator from '../Teams/components/item.separator';
 import HttpTeam from '../../services/Team/http-teams';
 

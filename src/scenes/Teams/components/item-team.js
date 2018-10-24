@@ -10,7 +10,7 @@ const ItemTeam = (props) => (
             <View>
                 <Image 
                     style={styles.image}
-                    source={{ uri: props.team.strTeamLogo}}
+                    source={{ uri: props.team.strTeamBadge}}
                 />           
             </View>
             <View style={styles.content}>
