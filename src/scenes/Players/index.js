@@ -49,7 +49,6 @@ class Player extends Component {
                     ItemSeparatorComponent={this.separatorComponent}
                     keyExtractor={this.keyExtractor}
                 />
-
             </View>
         );
     }
