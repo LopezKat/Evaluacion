@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
 const ItemPlayer = (props) => (
   <TouchableHighlight
-    onPress={() => props.navigation.navigate('PlayerDetailScreen', { strPlayer: props.player.strPlayer })}
+    onPress={() => props.navigation.navigate('TeamScreen', { strPlayer: props.player.strPlayer })}
     underlayColor="#ccc"
   >
     <View style={styles.container}>
@@ -26,7 +26,7 @@ const ItemPlayer = (props) => (
 );
 const styles = StyleSheet.create({
   container: {
-    flexDirection: 'column',
+    
   },
   contentImage: {
     flexDirection: 'row',

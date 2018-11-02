@@ -13,7 +13,7 @@ class HttpTeam {
         }
     }
 
-    async getTeamsById(strTeam){
+    async getTeamsByName(strTeam){
         try {
             const url  = `${ BASE_API }${ HTTP_TEAM.getTeam }${strTeam}`;
             console.log(url);
@@ -24,12 +24,12 @@ class HttpTeam {
         }
     }
 
-    async getPlayerById(strPlayer){
+    async getTeamById(idTeam){
         try {
-            const url  = `${ BASE_API }${ HTTP_TEAM.getPlayer }${strPlayer}`;
+            const url  = `${ BASE_API }${ HTTP_TEAM.getTeamDetail }${idTeam}`;
             console.log(url);
-            const data = await httpBase.baseGet(url, {});
-            return data;
+            const data1 = await httpBase.baseGet(url, {});
+            return data1;
         } catch (error) {
             console.log(error);
         }
